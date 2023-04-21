@@ -1,0 +1,9 @@
+import os
+import subprocess
+
+def update_packages():
+    subprocess.call(['sudo', 'apt', 'update'])
+    subprocess.call(['sudo', 'apt', 'upgrade', '-y'])
+
+if __name__ == "__main__":
+    update_packages()
